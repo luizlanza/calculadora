@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Calculadora</title>
+    </head>
+    <body>     
+    
+    <h1>Calculadora</h1> 
+    
+<div class="table-responsive" style="width:100%">
+
+<table class="table" >
+<td colspan="5" ><center><input type="text" class="form-control" id="resultado"></center></td>
+<tr>
+<td ><center><button style="width:100%" type="button" class="btn btn-default" value="7" onclick="calc(value)">7</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-default" value="8" onclick="calc(value)">8</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-default" value="9" onclick="calc(value)">9</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-info" value="/" onclick="calc(value)">/</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-info" value="*" onclick="calc(value)">*</button></center></td>
+</tr>
+<tr>
+<td><center><button style="width:100%" type="button" class="btn btn-default" value="4" onclick="calc(value)">4</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-default" value="5" onclick="calc(value)">5</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-default" value="6" onclick="calc(value)">6</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-info" value="-" onclick="calc(value)">-</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-info" value="+" onclick="calc(value)">+</button></center></td>
+</tr>
+<tr>
+<td ><center><button style="width:100%" type="button" class="btn btn-default" value="1" onclick="calc(value)">1</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-default" value="2" onclick="calc(value)">2</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-default" value="3" onclick="calc(value)">3</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-default" value="0" onclick="calc(value)">0</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-info" value="." onclick="calc(value)">,</button></center></td>
+</tr>
+<tr>
+<td colspan="3" ><center><button style="width:100%" type="button" class="btn btn-success" value="Calcular" onclick="calculo()">Calcular</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-warning" value="<-" onclick="calc(value)"><-</button></center></td>
+<td ><center><button style="width:100%" type="button" class="btn btn-danger" value="C" onclick="calc(value)">C</button></center></td>
+
+</tr>
+</table>
+
+ </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        
+        
+        
+        
+    </body>
+</html>
